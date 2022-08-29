@@ -19,16 +19,13 @@ suppliers of the eCommerce stie and the bank where all the monitory asset are
 hold.
 
 ## Why this project:
-This web project will help people to make virtual friends and express his emotion. We provide some facilities such as:
+This web project will help people to buy products online. We provide some facilities such as:
 <ul>
-<li>Share post</li>
-<li>Follow or unfollow user</li>
-<li>Like and unlike post</li>
-<li>Search users</li>
+<li>View products on the shop</li>
+<li>Add products on the cart</li>
+<li>Buy products from the cart</li>
+<li>View details of the purchased items</li>
 </ul>
-
-# Youtube Link of how our app works:
- Social Network Website <b>[ [watch now](https://www.youtube.com/watch?v=QxUmVyqKBt8) ] </b>
 
 
 ## Used Technologies:
@@ -40,24 +37,29 @@ This web project will help people to make virtual friends and express his emotio
 
 ## Clone this Project:
 ```
-git clone https://github.com/chandrashekhar13/SWE-Social-Network.git
+https://github.com/AHR97/CSE446_Web_API_Project.git
 ```
 
 ## Run the Project in your Machine
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
-Change directory to both api & client:
+Change directory to admin_supplier's, bank's and ecommerce's backend and frontend
 ```
-$ cd ./filepath/SWE-Social-Network/api
+$ cd ./filepath/CSE446_Web_API_Project/admin_supplier/backend
 
-$ cd ./filepath/SWE-Social-Network/client
+
+$ cd ./filepath/CSE446_Web_API_Project/admin_supplier/frontend
+
+$ cd ./filepath/CSE446_Web_API_Project/bank/backend
+
+$ cd ./filepath/CSE446_Web_API_Project/bank/frontend
+
+$ cd ./filepath/CSE446_Web_API_Project/ecommerce/backend
+
+$ cd ./filepath/CSE446_Web_API_Project/ecommerce/frontend
+
 ```
-Install npm in both directory:
+
+Install npm in all the directories:
 ```
 $ npm install
 ```
@@ -66,33 +68,6 @@ Run npm in both directory:
 $ npm start
 ```
 
-
-
-
-# Some Snapshots:
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-12-33.png"  height = "400"/> </p>
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-12-42.png"  height = "400"/> </p>
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-13-02.png"  height = "400"/> </p>
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-13-09.png"  height = "400"/> </p>
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-13-19.png "  height = "400"/> </p>
-
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-13-44.png "  height = "400"/> </p>
-
-
-<p  align="center"  >
-<img  src="ScreesShots/Screenshot from 2021-12-14 18-13-51.png "  height = "400"/> </p>
 
 
 
