@@ -1,0 +1,103 @@
+.productscreen {
+    max-width: 100%;
+    margin: 1rem auto;
+    align-items: center;
+    display: flex;
+  }
+  
+  .productscreen__left {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+  }
+  
+  .productscreen__left > .left__image {
+    margin: 1rem;
+    flex: 0.6;
+  }
+  
+  .productscreen__left > .left__info {
+    margin: 1rem;
+    flex: 0.4;
+    background: #fff;
+    height: fit-content;
+    font-size: 0.9rem;
+  }
+  
+  .productscreen__left > .left__name {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .productscreen__right {
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.4;
+  }
+  
+  .productscreen__right > .right__info {
+    width: 250px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .productscreen__right > .right__info >.row{
+    width: 90%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    }
+
+    .productscreen__right > .right__info >.qty{
+      width: 50%;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      font-weight: 400;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+      
+    .productscreen__right > .right__info >.qty>.input{
+      width: 50px;
+      height: 20px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .productscreen__right > .right__info >.qty>.qtyB{
+      width: 25px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      text-align:center;
+    }
+  
+    .productscreen__right > .right__info > .button {
+    grid-column: 1/-1;
+    width: 50%;
+    padding: 10px 16px;
+    margin-top: 10px;
+    background: #171717;
+    color: #fff;
+    border: 1px solid #171717;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+  
+ 

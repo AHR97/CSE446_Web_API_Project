@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 1,
+        "url" : "https://www.sony-asia.com/image/254eaf56b1612d346c0e4d5982712b08?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9",
+        "name": "Headphone",
+        "description":"Take your digital music collection to another level with High-Resolution Audio. By digitally capturing music at a higher rate than CD, High-Resolution Audio allows you to get closer to the original studio recording and enjoy your music just as the artist intended.",
+        "price": "4000Tk",
+        "product_id": "1"
+        
+    },
+
+    {
+        "id" : 2,
+        "url" : "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Nike Shoe",
+        "description":"For Comfort and duribilty",
+        "price": "12000Tk",
+        "product_id": "2"
+    },
+
+    {
+        "id" : 3,
+        "url" : "https://fabrilife.com/products/61207633a9018-square.jpg?v=20",
+        "name": "T-shirt",
+        "description":"The t-shirts are made with finest quality Combed Compact Cotton , features astonishing ~175 GSM on just 26's cotton which gives an smooth and compact construction.",
+        "price": "585Tk",
+        "product_id": "3"
+    }
+]

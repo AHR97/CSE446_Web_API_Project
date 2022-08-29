@@ -1,0 +1,50 @@
+.userprofile{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.userprofile > .wrapperLeft{
+    flex: 0.3;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+
+.userprofile > .wrapperLeft > .info {
+    width: 325px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    border: 8px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .userprofile > .wrapperLeft > .info >.row{
+    width: 90%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    }
+
+
+.userprofile > .wrapperRight{
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
