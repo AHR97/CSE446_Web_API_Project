@@ -2,8 +2,21 @@
 
 
 ## Introduction
-Social netwok is a simple web based project which enables user to express their thoughts by posting image or any sentence. Users can freind with other users by following them.Feed will show both user's and user's freinds post.Posts can be liked and unliked by any user.
-
+An e-commerce site’s primary goal is to sell goods and services online. Online
+shopping is a type of electronic shopping store in which the buyer connects
+directly to the seller’s computer, typically via the internet. The transaction is
+completed electronically and interactively in real time.
+The proposed system aids in the development of a website for the purchase
+and sale of products or goods over the internet.Unlike traditional commerce,
+which requires a person to go out and get products, eCommerce has made it
+easier for humans to reduce physical work and save time.The application’s basic
+concept is to allow customers to shop virtually using the Internet and purchase
+items.
+We tired to implement all the functionality and features of our requirement
+to our best of understanding.We have build a modern eCommerce site where
+interaction happens between 3 parties via API calls. These parties are the client,
+suppliers of the eCommerce stie and the bank where all the monitory asset are
+hold.
 
 ## Why this project:
 This web project will help people to make virtual friends and express his emotion. We provide some facilities such as:
