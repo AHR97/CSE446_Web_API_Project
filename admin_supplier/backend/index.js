@@ -6,6 +6,8 @@ const dotenv=require("dotenv")
 
 const authRouter=require('./routes/adminAuth')
 
+const supplierRouter =require('./routes/supplierAuth')
+
 
 
 const app = express()
@@ -20,7 +22,9 @@ mongoose.connect(process.env.DATABASE_ACCESS,() => console.log("DB connected"))
 
 app.use('/admin',authRouter)
 
+app.use('/supplier',supplierRouter)
+
 
 app.listen(7002,() => {
-    console.log("BE started at port 5002")
+    console.log("BE started at port 7002")
 })
