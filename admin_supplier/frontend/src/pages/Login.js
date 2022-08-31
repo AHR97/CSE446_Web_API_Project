@@ -31,7 +31,8 @@ const Login = () => {
 
            // console.log(allProducts)
 
-            localStorage.setItem("shopItems", JSON.stringify(allProducts));    
+            localStorage.setItem("shopItems", JSON.stringify(allProducts));
+                
 
         })
     }
@@ -49,11 +50,12 @@ const Login = () => {
 
             localStorage.setItem("orderItems", JSON.stringify(orderArray));
 
+
             // console.log(JSON.stringify(res.data.user)) 
         })
     }
 
-    const userBankInfo = async (fullname) =>{
+    const adminBankInfo = async () =>{
 
             await axios.get('http://localhost:5002/bank/getAllBankUser').then(info =>{
             const bankInfo =info.data
@@ -62,16 +64,44 @@ const Login = () => {
 
             for(let i=0; i<bankInfo.length ;i++)
             {
-                if(bankInfo[i].fullName===fullname)
+                if(bankInfo[i].fullName==="Admin")
                 {
                     userBankInfo=bankInfo[i]
-                    localStorage.setItem("userBankInfo",JSON.stringify(userBankInfo))
-                    
+                    localStorage.setItem("adminBankInfo",JSON.stringify(userBankInfo))
+                    console.log(userBankInfo)
                 }
+            }
+            if(userBankInfo)
+            {
+                
+                navigate("/admindashboard")
             }
         })
     }
 
+    const supplierBankInfo = async () =>{
+
+        await axios.get('http://localhost:5002/bank/getAllBankUser').then(info =>{
+        const bankInfo =info.data
+        
+        let userBankInfo=[]
+
+        for(let i=0; i<bankInfo.length ;i++)
+        {
+            if(bankInfo[i].fullName==="Supplier")
+            {
+                userBankInfo=bankInfo[i]
+                localStorage.setItem("supplierBankInfo",JSON.stringify(userBankInfo))
+                console.log(userBankInfo)
+            }
+        }
+        if(userBankInfo)
+        {
+            
+            navigate("/supplierdash")
+        }
+    })
+}
     const getAllUsers =async() =>{
         await axios.get('http://localhost:9002/client/user/getAllUser').then(res =>{
             let allUsers=[]
@@ -81,7 +111,7 @@ const Login = () => {
         })
     }
 
-    const login = () => {
+    const login = async() => {
 
         if(user.email==='admin@gmail.com')
         {
@@ -96,10 +126,9 @@ const Login = () => {
                 if(res.data.user)
                 {   
                     shopProducts()
-                    userBankInfo("Admin")
+                    adminBankInfo()
                     getAllUsers()
                     orderedProducts()
-                    navigate("/admindashboard")
                 }else{
                     navigate("/")
                 }    
@@ -119,9 +148,9 @@ const Login = () => {
             
                 if(res.data.user)
                 {   
-                    userBankInfo("Supplier")
                     orderedProducts()
-                    navigate("/supplierdash")
+                    
+                    supplierBankInfo()
                 }else{
                     navigate("/")
                 }    

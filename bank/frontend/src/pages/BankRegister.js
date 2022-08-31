@@ -42,10 +42,10 @@ const BankRegister = () => {
         })
     };
 
-    const register = () => {
+    const register = async() => {
         const { fullName, accountNumber,balance,pin } = accInfo
         if( fullName && accountNumber && balance && pin){
-            axios.post("http://localhost:5002/bank/user/register", accInfo)
+            await axios.post("http://localhost:5002/bank/user/register", accInfo)
             .then( res => {
                 alert(res.data.message)
                 const AccInfo={
@@ -59,7 +59,7 @@ const BankRegister = () => {
 
                 console.log(JSON.stringify(AccInfo))
                 
-                navigate("/bankhome")
+                navigate("/")
             })
         } else {
             alert("invlid input")

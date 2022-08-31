@@ -139,12 +139,18 @@ router.post('/bankTransections', async (req, res) => {
 
             const adminAcc=await BankUser.findOne({accountNumber:"8521522220"})
 
+            const supplierAcc=await BankUser.findOne({accountNumber:"2113817260"})
+
 
             const adminBalance= adminAcc.balance
+
+            const supplierBalance=supplierAcc.balance
 
             console.log(adminBalance)
 
             const newAdminBal=String(parseInt(adminBalance)+valAmount*0.1)
+
+            const newSupplierBal=String(parseInt(supplierBalance)+valAmount*0.9)
 
             console.log(newAdminBal)
 
@@ -160,6 +166,14 @@ router.post('/bankTransections', async (req, res) => {
                 adminAcc,
                 {
                   $set: { balance: newAdminBal },
+                },
+                { new: true }
+              );
+
+              await BankUser.updateOne(
+                supplierAcc,
+                {
+                  $set: { balance: newSupplierBal},
                 },
                 { new: true }
               );

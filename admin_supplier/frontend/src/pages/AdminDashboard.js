@@ -11,7 +11,7 @@ import OrderContainer from "../components/OrderContainer"
 
  const AdminDashboard = () =>{
 
-    let obj=localStorage.getItem("userBankInfo")
+    let obj=localStorage.getItem("adminBankInfo")
     const adminInfo=JSON.parse(obj)
 
      

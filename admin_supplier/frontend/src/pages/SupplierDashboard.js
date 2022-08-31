@@ -8,7 +8,7 @@ import OrderedProducts from "../components/orders"
 
  const SupplierDashboard = () =>{
 
-    let obj=localStorage.getItem("userBankInfo")
+    let obj=localStorage.getItem("supplierBankInfo")
     const supplierInfo=JSON.parse(obj)
 
      

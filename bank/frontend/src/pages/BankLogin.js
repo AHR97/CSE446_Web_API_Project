@@ -23,7 +23,7 @@ const BankLogin = () => {
         })
     };
 
-    const login = () =>{
+    const login = async() =>{
         const {accountNumber,pin}=accInfo
 
         if(accountNumber && pin){
