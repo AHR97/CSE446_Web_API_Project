@@ -85,6 +85,18 @@ router.get("/getUserInfo", async(req, res)=> {
     })
 }) 
 
+router.get("/getAllUser", async(req,res) =>{
+    try{
+        //const {userName} = req.body
+        const allUsers= await User.find()
+        
+        res.json(allUsers)
+
+    }catch(err){
+        res.send(err)
+    }
+})
+
 
 
 module.exports = router

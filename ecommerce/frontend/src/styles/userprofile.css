@@ -12,6 +12,7 @@
     align-items: flex-start;
     padding-left: 10px;
     justify-content: center;
+    
 }
 
 
@@ -27,6 +28,9 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    border: 2px solid blue;
+    border-radius: 8px;
+    margin-top: 2rem;
   }
   
   .userprofile > .wrapperLeft > .info >.row{

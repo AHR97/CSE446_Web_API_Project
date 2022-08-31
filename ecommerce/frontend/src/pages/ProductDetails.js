@@ -88,7 +88,7 @@ const ProductDetails = () => {
         alert(res.data.message)
         if(res.data.message === "Successfully added to cart")
         {
-          navigate("/") 
+          navigate("/home") 
         }
       })
     }

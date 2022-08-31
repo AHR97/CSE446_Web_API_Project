@@ -7,6 +7,8 @@
     margin: 8px auto;
     display: flex;
     flex-direction: row;
+    border: 2px solid orangered;
+    border-radius: 8px;
     justify-content: space-between;
   }
   
@@ -32,6 +34,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    
   }
   
   .orderedItems> .description > .right{

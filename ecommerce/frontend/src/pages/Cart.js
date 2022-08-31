@@ -106,15 +106,19 @@ const Cart = () => {
               let newProducts
               newProducts=res.data
               localStorage.setItem("shopItems", JSON.stringify(newProducts))
+              
+              
             })
 
 
           }
+          alert(response.data.message)
         })
       }
       }
+
       
-      navigate("/")
+      navigate("/home")
     }else{
       console.log(transectionInfo.data)
     }

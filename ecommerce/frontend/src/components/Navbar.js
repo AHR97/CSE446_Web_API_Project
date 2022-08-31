@@ -119,7 +119,7 @@ function Navbar() {
   return (
     <div className="navbar">
         <div className="wrapperLeft">
-            <text className='logo' onClick={() => navigate("/")}>Benemart</text>
+            <text className='logo' onClick={() => navigate("/home")}>Benemart</text>
             
         </div>
         <div className="wrapperCenter">
@@ -130,7 +130,7 @@ function Navbar() {
             <text style={{color: 'white',fontSize: 18, fontWeight: 400,cursor:'pointer'}} onClick={()=>orderedProducts()}> {data.userName}</text>
             <ShoppingCartOutlined className="menuIcon" style={{color: 'white'}} onClick={()=>cartProducts()}></ShoppingCartOutlined>
             {/* <AccountBalanceWalletOutlined className='menuIcon' style={{color: 'white'}}></AccountBalanceWalletOutlined> */}
-            <div className='menuText' onClick={() => navigate("/login")}>Logout</div>
+            <div className='menuText' onClick={() => navigate("/")}>Logout</div>
         </div>
      
     </div>

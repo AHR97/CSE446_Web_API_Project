@@ -5,15 +5,6 @@ const UserOrderedProducts=()=>{
     let obj =localStorage.getItem("userOrderItems")
     const Items =JSON.parse(obj)
 
-    let total=0
-
-    for(let i=0; i<Items.length;i++)
-    {
-        total=total+parseInt(Items[i].amount)
-    }
-    
-    console.log(total)
-
     return(  
     Items.map(orderItems => {
         return(

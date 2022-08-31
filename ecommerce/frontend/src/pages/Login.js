@@ -74,9 +74,9 @@ const Login = () => {
             {   
                 shopProducts()
                 userBankInfo(res.data.user.userName)
-                navigate("/")
+                navigate("/home")
             }else{
-                navigate("/login")
+                navigate("/")
             }    
 
 

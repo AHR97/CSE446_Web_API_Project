@@ -13,9 +13,9 @@ function App() {
     <div>
       <Router>
         <Routes>
-            <Route exact path="/login" element={<Login/>}/>
+            <Route exact path="/" element={<Login/>}/>
             <Route exact path="/register" element={<Register/>}/>
-            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/home" element={<Home/>}/>
             <Route exact path="/bankinfo" element={<BankInfo/>}/>
             <Route exact path="/userprofile" element={<UserProfile/>}/>
             <Route exact path="/details/:id" element={<ProductDetails/>}/>
